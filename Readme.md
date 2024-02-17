@@ -25,5 +25,31 @@ pip install pika
 ```
 
 ## Usage
-- Starting the Central Server
-- Run the central server script to manage group registrations and listings:
+### Starting the Central Server
+Run the central server script to manage group registrations and listings:
+```bash
+python3 server.py
+```
+
+### Starting a Group Server
+Start a group server by specifying a group name:
+```bash
+python3 group.py <group_name>
+```
+
+### Using the User Client
+Run the user client script with a user name:
+```bash
+python3 user_client.py <user_name>
+```
+
+## Components
+
+### Central Server (`server.py`)
+The central server manages groups. It supports registering new groups, listing all groups, and removing groups from the system.
+
+### Group Server (`group_server.py`)
+Each group server manages a specific group's communications, including adding users to the group, removing users, storing messages, and retrieving messages.
+
+### User Client (`user_client.py`)
+The user client allows users to interact with the system. Users can join groups, leave groups, send messages to a group, and fetch messages from a group.
