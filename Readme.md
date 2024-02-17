@@ -21,7 +21,7 @@ This project implements a simple, distributed messaging system using ZeroMQ. The
 Ensure Python 3 is installed on your system. Install the ZeroMQ library using pip:
 
 ```bash
-pip install pika
+pip install pyzmq
 ```
 
 ## Usage
