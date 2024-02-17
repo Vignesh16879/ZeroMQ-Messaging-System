@@ -1,0 +1,36 @@
+version: '3'
+services:
+  group-01:
+    build:
+      context: .
+    command: ["python", "group.py", "Group-01"]
+    ports:
+      - "5210:5210"
+
+  group-02:
+    build:
+      context: .
+    command: ["python", "group.py", "Group-02"]
+    ports:
+      - "5220:5220"
+
+  group-03:
+    build:
+      context: .
+    command: ["python", "group.py", "Group-03"]
+    ports:
+      - "5230:5230"
+
+  group-04:
+    build:
+      context: .
+    command: ["python", "group.py", "Group-04"]
+    ports:
+      - "5240:5240"
+
+  group-05:
+    build:
+      context: .
+    command: ["python", "group.py", "Group-05"]
+    ports:
+      - "5250:5250"
